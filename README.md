@@ -11,8 +11,6 @@ a Python GPA Calculator using the Grades to Points Conversion (GtP) of an unspec
 
 ## future potential features
 - [x] show user's cumulative and semester gpa based on amount of semesters entered
-- [ ] save and/or load gpas
-    - [ ] also have an option to edit
 - [ ] allow for numerical input for grades instead of being limited to just letters
    - [ ] automatically convert numerical grades into letters, which can either follow university's gtp scale or a custom one
 - [ ] add color to semester names when printing
