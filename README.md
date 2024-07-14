@@ -2,7 +2,7 @@
 
 a Python GPA Calculator using the Grades to Points Conversion (GtP) of an unspecified university
 
-
+also a test project
 
 ## future features
 - [ ] cumulative and semester gpa (based on amount of semesters entered)
