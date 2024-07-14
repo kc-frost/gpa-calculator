@@ -12,7 +12,7 @@ def main():
         course_name = input(f"Course #1: ").upper()
         course_num = 2
 
-        while not course_name:
+        while course_name != "":
             course_letter_grade = input("Grade (Letter ONLY): ").upper()
 
             while not course_letter_grade or course_letter_grade.isnumeric == False:
