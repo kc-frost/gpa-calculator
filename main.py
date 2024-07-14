@@ -60,12 +60,25 @@ def calculate_gpa():
     credit_hours = 0
     credit_points = 0
 
-    for list_courses in user_grades.values():
-        for info in list_courses:
-            credit_hours += info.get("Credit Hours", 0)
-            credit_points += info.get("Points", 0)
+    for semester, list_of_courses in user_grades.items():
+        semester_hours = 0
+        semester_points = 0
 
-    if credit_hours == 0:
+        for info in list_of_courses:
+            semester_hours += info.get("Credit Hours", 0)
+            semester_points += info.get("Points", 0)
+            
+        if semester_hours > 0:
+            semester_gpa = round(semester_points/semester_hours, 2)
+        else:
+            semester_gpa = 0
+        
+        list_gpas[semester] = semester_gpa
+
+        total_hours += semester_hours
+        total_points += semester_points
+
+    if total_hours == 0:
         return 0
     
     return round(credit_points / credit_hours, 2)
