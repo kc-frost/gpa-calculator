@@ -57,8 +57,10 @@ def letter_to_points(course_grade, course_credits):
     return conversion_dict[course_grade] * course_credits
 
 def calculate_gpa():
-    credit_hours = 0
-    credit_points = 0
+    list_gpas = {}
+
+    total_hours = 0
+    total_points = 0
 
     for semester, list_of_courses in user_grades.items():
         semester_hours = 0
@@ -81,7 +83,10 @@ def calculate_gpa():
     if total_hours == 0:
         return 0
     
-    return round(credit_points / credit_hours, 2)
+    cumulative_gpa = round(total_points / total_hours, 2)
+    list_gpas["Cumulative"] = cumulative_gpa
+
+    return list_gpas
 
 def print_user_grades():
     total_semesters = len(user_grades)
