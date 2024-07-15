@@ -108,6 +108,7 @@ def print_user_grades():
     total_semesters = len(user_grades)
     i = 0
 
+    # prints info of the courses the user has inputted
     for semester, list_courses in user_grades.items():
         print(f"{semester} Semester")
         for info in list_courses:
@@ -119,6 +120,9 @@ def print_user_grades():
                     print(f"{title}: {value}")
             print()
             print_user_gpas(semester)
+
+        # user can navigate forward 
+        # if they press enter
         if i < (total_semesters - 1):
             i += 1
             input("[Enter] to continue")
@@ -127,6 +131,8 @@ def print_user_grades():
 def print_user_gpas(semester):
     gpas_dict = calculate_gpa()
 
+    # makes semester gpas show up
+    # when their respective gpas are being printed
     for time, gpa in gpas_dict.items():
         if time == semester or time == "Cumulative":
             print(f"{time}: {gpa}")
