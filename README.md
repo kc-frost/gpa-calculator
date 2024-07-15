@@ -1,6 +1,8 @@
 # gpa-calculator
 
 a python gpa calculator using the grades to points conversion (gtp) scale of an unspecified university
+this project is made more for test of skills than an actual program
+
 
 ## future potential changes
 - [x] show user's cumulative and semester gpa based on amount of semesters entered (2024.07.13)
