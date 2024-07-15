@@ -118,17 +118,18 @@ def print_user_grades():
                 else:
                     print(f"{title}: {value}")
             print()
-            print_user_gpas()
+            print_user_gpas(semester)
         if i < (total_semesters - 1):
             i += 1
             input("[Enter] to continue")
             print()
             
-def print_user_gpas():
+def print_user_gpas(semester):
     gpas_dict = calculate_gpa()
 
     for time, gpa in gpas_dict.items():
-        print(f"{time}: {gpa}")
+        if time == semester or time == "Cumulative":
+            print(f"{time}: {gpa}")
 
 
 if __name__ == "__main__":
