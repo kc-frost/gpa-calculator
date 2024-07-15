@@ -15,3 +15,4 @@ a python gpa calculator using the grades to points conversion (gtp) scale of an 
    * can also be viewed (via user option)
    * format `(NAME, LETTER_GRADE, POINTS, CREDIT_HOURS)`
 * gpas are automatically calculated per semester and cumulatively
+* numerical grade to letter grade conversion
