@@ -1,5 +1,4 @@
 # gpa-calculator
-`a test project`
 
 a python gpa calculator using the grades to points conversion (gtp) scale of an unspecified university
 
