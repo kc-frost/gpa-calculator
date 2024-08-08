@@ -40,7 +40,7 @@ def main():
     print()
     print_user_grades()
     
-def enter_course_info(semester_name, course_info):
+def enter_course_info(course_info):
     course_titles = ("Name", "Letter Grade", "Points", "Credit Hours")
     course_as_dict = {}
 
